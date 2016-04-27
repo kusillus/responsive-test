@@ -1,0 +1,46 @@
+body{
+	background-color: #222;
+}
+section{
+	/*Propiedad que hace que el padding se mida por dentro
+	asi no afecta (les agrega) tamaño a las cajas*/
+	box-sizing: border-box;
+	margin: 1%;
+	float: left;
+	/* rem toma el valor relativo a la raiz y em toma el valor relativo al padre*/
+	padding: 1rem;
+	background: rgba(255,255,255, .6);
+}
+/*Agregango la propiedad max-width evitamos que la imagen se
+"desvorde", si la imagen se deforma agraga un height: auto*/
+img{
+	max-width: 100%;
+	height: auto;
+}
+/* media queries funcionan como si fuesen un if el codigo
+se ejecuta si se cumple la condicion*/
+@media (min-width: 360px){
+	body{
+		background-color: green;
+	}
+	section{
+		width: 48%;
+	}
+}
+@media (min-width: 768px){
+	body{
+		background-color: red;
+	}
+	section{
+		width: 31.33%;
+	}
+}
+@media (min-width: 1200px){
+	body{
+		background-color: yellow;
+	}
+	section{
+		width: 23%;
+	}
+}
+/*Modelo de Cajas*/
